@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  abstract: MyText
+  submitted: 2011-05-31
+  accepted: 2011-05-31
+  rejected: false
+
+two:
+  title: MyString
+  abstract: MyText
+  submitted: 2011-05-31
+  accepted: 2011-05-31
+  rejected: false
