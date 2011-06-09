@@ -1,4 +1,4 @@
 Publicationdb::Application.routes.draw do
-  resource :author
-  root :to => 'author#index'
+  resources :authors
+  root :to => 'authors#index'
 end
