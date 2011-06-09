@@ -26,9 +26,9 @@ class AuthorsController < ApplicationController
   def show
     @author = Author.find(params[:id])
     str = "This is the profile of an author:<br /><br />"
-    str += "<b>ID</b>: #{@author._id}"
-    str += "<b>Name</b>: #{@author.name}"
-    str += "<b>Email</b>: #{@author.email}"
+    str += "<b>ID</b>: #{@author._id}<br />"
+    str += "<b>Name</b>: #{@author.name}<br />"
+    str += "<b>Email</b>: #{@author.email}<br />"
 
     render :inline => str
   end
@@ -46,5 +46,13 @@ class AuthorsController < ApplicationController
   end
 
   def destroy
+  end
+  
+  def publish
+    @author = Author.find(params[:id])
+    
+    str = "this is the #{params[:controller]} custom controller for #{@author.name}"
+
+    render :inline => str
   end
 end
